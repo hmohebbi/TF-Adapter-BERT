@@ -7,9 +7,9 @@ An example of training adapters in BERT's encoders on the MRPC classification ta
 ```
 pip install transformers
 
-python run_tf_adapter_bert.py \
+python run_tf_glue_adapter_bert.py \
   --casing bert-base-uncased \
-  --bottleneck_size 32\
+  --bottleneck_size 64\
   --non_linearity gelu\
   --task mrpc \
   --batch_size 32 \
