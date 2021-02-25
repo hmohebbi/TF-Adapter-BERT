@@ -20,13 +20,13 @@ class AdapterModule(tf.keras.Model):
 
     self.down_project = tf.keras.layers.Dense(
                         bottleneck_size,
-                        kernel_initializer=tf.keras.initializers.TruncatedNormal(stddev=0.02),
+                        kernel_initializer=tf.keras.initializers.TruncatedNormal(stddev=1e-3),
                         bias_initializer="zeros",
                         name="feedforward_downproject")
     
     self.up_project = tf.keras.layers.Dense(
                         input_size,
-                        kernel_initializer=tf.keras.initializers.TruncatedNormal(stddev=0.02),
+                        kernel_initializer=tf.keras.initializers.TruncatedNormal(stddev=1e-3),
                         bias_initializer="zeros",
                         name="feedforward_upproject")
     
