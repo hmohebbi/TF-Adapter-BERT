@@ -107,10 +107,10 @@ def main():
   for i in range(config.num_hidden_layers):
     model.bert.bert.encoder.layer[i].attention.self_attention.trainable = False
     model.bert.bert.encoder.layer[i].attention.dense_output.dense.trainable = False
-    model.bert.bert.encoder.layer[i].attention.dense_output.LayerNorm.trainable = False
+    #model.bert.bert.encoder.layer[i].attention.dense_output.LayerNorm.trainable = False
     model.bert.bert.encoder.layer[i].intermediate.trainable = False
     model.bert.bert.encoder.layer[i].bert_output.dense.trainable = False
-    model.bert.bert.encoder.layer[i].bert_output.LayerNorm.trainable = False
+    #model.bert.bert.encoder.layer[i].bert_output.LayerNorm.trainable = False
 
 
   # Loss & Optimizer
