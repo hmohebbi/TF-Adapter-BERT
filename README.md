@@ -36,7 +36,8 @@ python run_tf_glue_adapter_bert.py \
   --saved_models_dir "saved_models"\
   ```
 
-## Results on [GLUE](https://gluebenchmark.com/) test sets
+<!---## Results on [GLUE](https://gluebenchmark.com/) test sets
 | CoLA  | SST-2  | MRPC  | STS-B  | QQP  | MNLI(m)  | MNLI(mm)  | QNLI  | RTE  | Total |
 | ----|:----:| ----:| ----:| ----:| ----:| ----:| ----:| ----:| ----:|
 | 55.2 | 90.9 | 88.7 | 82.5 | 71.4 | 84.1 | 83.3 | 90.6 | 68.2 |79.4 |
+-->
